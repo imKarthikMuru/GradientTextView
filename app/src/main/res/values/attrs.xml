@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradientTextView">
+        <attr name="isBold" format="boolean"/>
+        <attr name="isItalic" format="boolean"/>
+        <attr name="isGradient" format="boolean"/>
+        <attr name="isCustomColor" format="boolean"/>
+        <attr name="startColor" format="color"/>
+        <attr name="endColor" format="color"/>
+        <attr name="angle" format="integer"/>
+        <attr name="enableStroke" format="boolean" />
+        <attr name="strokeTint" format="color" />
+        <attr name="strokeSize" format="dimension" />
+        <attr name="strokeStartColor" format="color" />
+        <attr name="strokeEndColor" format="color" />
+        <attr name="backgroundStartColor" format="color"/>
+        <attr name="backgroundEndColor" format="color"/>
+        <attr name="backgroundAngle" format="integer"/>
+        <attr name="backgroundCornerRadius" format="dimension" />
+        <attr name="backgroundStrokeWidth" format="dimension" />
+        <attr name="backgroundStrokeColor" format="color" />
+    </declare-styleable>
+</resources>
