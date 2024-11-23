@@ -31,6 +31,13 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -42,15 +49,20 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.imKarthikMuru"
+            artifactId = "GradientTextView"
+            version = "1.0.2"
+
+            afterEvaluate {
                 from(components["release"])
-                groupId = "com.github.imKarthikMuru"
-                artifactId = "GradientTextView"
-                version = "1.0.2"
             }
         }
     }
 }
+
+
+
