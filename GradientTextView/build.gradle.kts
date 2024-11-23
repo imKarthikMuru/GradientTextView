@@ -49,7 +49,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.imKarthikMuru"
                 artifactId = "GradientTextView"
-                version = "1.0.1"
+                version = "1.0.2"
             }
         }
     }
